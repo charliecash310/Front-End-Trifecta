@@ -1,0 +1,165 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Build a Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Please Fill Out The Form</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Your Name: <input id="name" type="text" placeholder="Your Name:" required></label>
+    <br>
+
+    <label id="email-label" for="email">Your Email: <input id="email" type="email" placeholder="Your Email:" required></label>
+    <br>
+
+    <label id="number-label" for="number">Your Phone Number: <input id="number" type="number" min="00000000000" max="999999999999" placeholder="Your Phone Number:" required></label>
+    <br>
+
+    <fieldset>
+      <legend id="input">Are you over the age of 21?</legend>
+      <label>Yes <input id="Yes" type="radio" name="Yes" class="inline" value="Yes" checked/></label>
+      <br>
+      <label>No <input id="No" type="radio" name="No" class="inline" value="No"></label>
+
+    </fieldset>
+    <br>
+
+<fieldset>
+<legend id="input">Skilled, Fit and, Available?</legend>
+<label> Yes <input id="Yes" type="radio" name="Yes" class="inline" value="Yes" checked/></label>
+<br>
+<label>No <input id="No" type="radio" name="No" class="inline" value="No"></label>
+</fieldset>
+
+<div class="checkbox">
+  <p>Preferred Social Media Platforms?
+      <span class="checkall">(Check all that apply)</span>
+  </p>
+<label><input id="check" value="META" type ="checkbox" class="checkbox"> META </label>
+<label><input id="check" value="X" type ="checkbox" class="checkbox"> X </label>
+<label><input id="check" value="Threads" type ="checkbox" class="checkbox"> Threads </label>
+</div>
+
+
+<br>
+ <div class="input-element">
+    <label for="select-label">How did you hear about us? </label>
+      <select id="dropdown">
+      <option>(select one)</option>
+      <option>Other</option>
+    </div>
+</br>
+
+    <label for="text-area">Comments
+      <textarea id="text-area" name="text-area" rows="3" cols="30" placeholder="Enter your comments here"></textarea>
+    </label>
+    <br>
+
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* General styles */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  text-align: center;
+}
+
+/* Form styles */
+
+#survey-form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.checkall {
+  font-style: italic;
+}
+
+.checkbox label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.input-element {
+  margin-bottom: 10px;
+}
+
+label[for="select-label"] {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#submit {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+
+
+** end of undefined **
+

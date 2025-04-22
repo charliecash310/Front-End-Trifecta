@@ -1,0 +1,40 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<body>
+<main id="main">
+  <title id="title">Alan Turing</title>
+<figure id="img-div">
+  <img id="image" src="https://imgur.com/ECjpp2B" alt="Alan Turing The Man Himself">
+  <figcaption id="img-caption">The man who created Engima</figcaption>
+</figure>
+<section id="tribute-info">
+  <h3>Here is a list of Mr. Turing's Accomplishments</h3>
+</section>
+<a id="tribute-link" href="" target="_blank"></a>
+
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+** end of undefined **
+
